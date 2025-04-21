@@ -5,8 +5,8 @@ def extract_data():
     #Connect to MySQL
     conn = pymysql.connect(
         host = 'localhost',
-        user = 'root',
-        password = 'Jan@2021',
+        user = 'YourUserName',
+        password = 'YourPassword',
         database = 'ecommerce_db'
     )
 
