@@ -9,8 +9,8 @@ st.title("E-Commerce Order Management Dashboard")
 def get_connection():
     return mysql.connector.connect(
         host = "localhost",
-        user = "root",
-        password = "Jan@2021",
+        user = "Your_User_Name",
+        password = "YourPassword",
         database = "ecommerce_db"
     )
 
@@ -67,6 +67,8 @@ st.subheader("Top Selling Products")
 fig_top = px.bar(df_top, x = 'name', y = 'total_sold', title = "Top 10 Products", color = 'total_sold')
 st.plotly_chart(fig_top)
 
+#To run this program on Terminal write below command 
+#streamlit run dashboard/app.py
 
 
 
